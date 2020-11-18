@@ -21,7 +21,10 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     PRISMIC_REPOSITORY_NAME
     API_KEY
 
-2)  **Start developing.**
+3)  **Prismic models.**
+    Use jsons files inside schemas folder to create your model system inside Primisc.
+
+4)  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -30,7 +33,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     gatsby develop
     ```
 
-3)  **Open the source code and start editing!**
+5)  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
