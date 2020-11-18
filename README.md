@@ -5,34 +5,32 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Gatsby's + Prismic Starter
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React. Use Prismic as your source of content
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Install.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Clone and install node modules.
+    Create .env.development & .env.production files with prismic credentials
+    PRISMIC_REPOSITORY_NAME
+    API_KEY
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
-
-1.  **Start developing.**
+2)  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-default-starter/
+    cd gatsby-init-starter/
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+3)  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
