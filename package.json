@@ -16,6 +16,7 @@
     "gatsby-plugin-react-helmet": "^3.4.0",
     "gatsby-plugin-sharp": "^2.8.0",
     "gatsby-source-filesystem": "^2.5.0",
+    "gatsby-source-prismic": "^3.2.1",
     "gatsby-transformer-sharp": "^2.6.0",
     "preact": "^10.5.7",
     "preact-render-to-string": "^5.1.12",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
+    "dotenv": "^8.2.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^4.3.0",

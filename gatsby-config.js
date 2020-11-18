@@ -1,3 +1,10 @@
+const post = require('./src/schemas/post.json')
+const category = require('./src/schemas/category.json')
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Conseil piscine`,
@@ -27,6 +34,22 @@ module.exports = {
         theme_color: `#303030`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: 'gatsby-source-prismic',
+      options: {
+        repositoryName: `${process.env.PRISMIC_REPOSITORY_NAME}`,
+        accessToken: `${process.env.API_KEY}`,
+        // Get the correct URLs in blog posts
+        linkResolver: ({ node }) => blogpost =>
+          // `/blog/${node.data.categories[0].category.uid}/${blogpost.uid}`,
+          `/blog/${blogpost.uid}`,
+        lang: 'fr-fr',
+        schemas: {
+          post,
+          category,
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
